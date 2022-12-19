@@ -1,0 +1,33 @@
+.container{
+    padding: 0 2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.container>:nth-child(1){
+    position: absolute;
+    width: 8rem;
+    left: 30%;
+    top: -3rem;
+}
+.products{
+    display: grid;
+    width: 90%;
+    grid-template-columns: 25% auto;
+}
+.menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.menu>li:hover{
+    color: var(--pink);
+    cursor: pointer;
+}
