@@ -31,3 +31,56 @@
     color: var(--pink);
     cursor: pointer;
 }
+.list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    height: 25rem;
+    overflow-y: scroll;
+    grid-gap: 2rem;
+    justify-content: space-between;
+}
+.product{
+    width: 12rem;
+    height: 8rem;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden; 
+    padding: 1rem;
+    display: flex;
+    border-radius: 1rem;
+}
+.products>img{
+    top: 3rem;
+    width: 6rem;
+    height: 11rem;      
+}
+
+
+@media screen and (max-width: 856px) {
+    .container{
+        gap: 1rem;
+    }
+    .container>:nth-child(1){
+        display: none;
+    }
+    .products{
+        grid-template-columns: none;
+        gap: 1rem;
+    }
+    .menu{
+        flex-direction: row;
+    }
+} 
+
+@media screen and (max-width: 640px) {
+    .menu{
+        margin-left: -2rem;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .container h1{
+        text-align: center;
+    }
+}
